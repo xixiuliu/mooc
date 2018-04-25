@@ -1,16 +1,15 @@
 import mongoose from 'mongoose'
-import config from 'config'
+import config from '../config'
 import Wechat from '../wechat-lib'
 
 const Token = mongoose.model('Token')
 const wechatConfig = {
   wechat: {
-    appId: config.wechat.appID,
-    appSecret: config.wechat.appsecret,
+    appID: config.wechat.appID,
+    appSecret: config.wechat.appSecret,
     token: config.wechat.token,
     getAccessToken: async () => await Token.getAccessToken(),
     saveAccessToken: async (data) => await Token.saveAccessToken(data)
-
   }
 }
 export const getWechat = () => {

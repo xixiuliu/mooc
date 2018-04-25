@@ -1,11 +1,14 @@
 .container{
+height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .user-avatar{
   width: 200rpx;
   height: 200rpx;
+  border-radius: 50%;
   margin-top: 160rpx;
 }
 

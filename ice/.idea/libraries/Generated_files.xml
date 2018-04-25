@@ -1,0 +1,37 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/client.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-child.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-link.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/middleware.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/server.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/config/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/middlewares/router.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/wechat-lib/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/wechat-lib/middleware.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/wechat-lib/tpl.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/wechat-lib/util.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/wechat/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/wechat/reply.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/client.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-child.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-link.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/middleware.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/server.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/config/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/middlewares/router.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/wechat-lib/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/wechat-lib/middleware.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/wechat-lib/tpl.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/wechat-lib/util.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/wechat/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/wechat/reply.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

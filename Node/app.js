@@ -1,4 +1,4 @@
-const mod = require('./cusmod');
+const mod = require('./05_global');
 
-console.log(mod.testVar)
-mod.testFn();
+console.log(mod.test);
+console.log(test2);

@@ -19,6 +19,6 @@ export const database = app => {
     console.error(err)
   })
   mongoose.connection.on('open', async => {
-    console.error('Connected to MongoDB', config.db)
+    console.log('Connected to MongoDB', config.db)
   })
 }

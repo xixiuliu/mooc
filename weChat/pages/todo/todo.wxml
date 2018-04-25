@@ -1,0 +1,21 @@
+<!--pages/todo/todo.wxml-->
+<view class='todo_page'>
+        <view class='todo_input'>
+                <input type='text'  placeholder='请输入todo' bindinput='setInput' value='{{ addText }}'  focus='{{focus}}'></input>
+                <button bindtap='addTodo'>添加</button>
+                <button bindtap='addTodoClear'>取消</button>
+        </view>
+        <view class='progress'>
+                <text>正在进行中 <text>{{num}}</text></text>
+                 <view wx:for="{{ lists }}" wx:key="index"  data-index="{{ index }}" bindtap="delete"> 
+                         {{lists[index].id}} : {{lists[index].title}} 
+                 </view> 
+        </view>
+        <view>
+                <text>{{score}}</text>
+        </view>
+        <!-- <view class='has_ready'>
+                <text>已完成 <text>0</text></text>
+                <view></view>
+        </view> -->
+</view>

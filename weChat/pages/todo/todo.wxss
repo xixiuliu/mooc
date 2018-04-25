@@ -1,0 +1,38 @@
+/* pages/todo/todo.wxss */
+.todo_page{
+    padding: 0 64rpx;
+    font-size: 14px;
+     line-height: 24px;
+     color: #000;
+}
+.todo_input {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 64rpx 0;
+    font-size: 14px;
+     line-height: 24px;
+     color: #000;
+}
+ .todo_input input {
+        display: block;
+        flex:1;
+        height: 22px;
+        border: 1px solid #e91e63;  
+        box-sizing: border-box;
+        padding: 0 20rpx;
+ }
+  .todo_input button {
+    width: 100rpx;
+    height: 30px;
+     margin-left: 20rpx;
+    padding: 0;
+    border: none;
+    font-size: 14px;
+    line-height: 30px;
+    color: #e91e63;
+    background-color: none;
+  }
+  .progress text{
+      color: #e91e63;
+  }

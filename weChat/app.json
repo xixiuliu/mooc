@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/todo/todo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e91e63",
+    "navigationBarTitleText": "todoList",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "backgroundColor": "#e91e63",
+    "list": [
+        {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "color": "#000000"
+        },
+        {
+            "pagePath": "pages/todo/todo",
+            "text": "清单"
+        }
+    ]
+}
+}
