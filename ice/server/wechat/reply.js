@@ -1,7 +1,10 @@
 const tip = 'hello world'
 export default async (ctx, next) => {
   const message = ctx.weixin
-  console.log(message)
+  let mp = require('../wechat')
+  let client = mp.getWechat()
+
+  // console.log(message)
   if (message.MsgType === 'event') {
     if (message.Event === 'subscribe') {
       ctx.body = tip
@@ -9,6 +12,18 @@ export default async (ctx, next) => {
       ctx.body = '取关'
     }
   } else if (message.MsgType === 'text') {
+    if (message.Content === '1') {
+      let userList = [
+        {
+          openid: 'olS79wCAja-ZzpFvLOOegWPr00PI',
+          lang: 'zh_CN'
+        }
+      ]
+      // const data = await client.handle('createTag', 'vue')
+      // const data = await client.handle('fetchTags')
+      const data = await client.handle('fetchTagUsers', 2)
+      console.log(data)
+    }
     ctx.body = message.Content
   } else if (message.MsgType === 'image') {
     ctx.body = {
