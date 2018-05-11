@@ -1,0 +1,752 @@
+[
+  {
+    "nmId": "nm0227759",
+    "name": "Tyrion Lannister",
+    "chId": "tt0944947",
+    "playedBy": "Peter Dinklage"
+  },
+  {
+    "nmId": "nm0372176",
+    "name": "Cersei Lannister",
+    "chId": "tt0944947",
+    "playedBy": "Lena Headey"
+  },
+  {
+    "nmId": "nm3592338",
+    "name": "Daenerys Targaryen",
+    "chId": "tt0944947",
+    "playedBy": "Emilia Clarke"
+  },
+  {
+    "nmId": "nm3229685",
+    "name": "Jon Snow",
+    "chId": "tt0944947",
+    "playedBy": "Kit Harington"
+  },
+  {
+    "nmId": "nm3849842",
+    "name": "Sansa Stark",
+    "chId": "tt0944947",
+    "playedBy": "Sophie Turner"
+  },
+  {
+    "nmId": "nm3586035",
+    "name": "Arya Stark",
+    "chId": "tt0944947",
+    "playedBy": "Maisie Williams"
+  },
+  {
+    "nmId": "nm0182666",
+    "name": "Jaime Lannister",
+    "chId": "tt0944947",
+    "playedBy": "Nikolaj Coster-Waldau"
+  },
+  {
+    "nmId": "nm0322513",
+    "name": "Jorah Mormont",
+    "chId": "tt0944947",
+    "playedBy": "Iain Glen"
+  },
+  {
+    "nmId": "nm0654295",
+    "name": "Theon Greyjoy",
+    "chId": "tt0944947",
+    "playedBy": "Alfie Allen"
+  },
+  {
+    "nmId": "nm3729225",
+    "name": "Brienne of Tarth",
+    "chId": "tt0944947",
+    "playedBy": "Gwendoline Christie"
+  },
+  {
+    "nmId": "nm0192377",
+    "name": "Davos Seaworth",
+    "chId": "tt0944947",
+    "playedBy": "Liam Cunningham"
+  },
+  {
+    "nmId": "nm0283492",
+    "name": "Bronn",
+    "chId": "tt0944947",
+    "playedBy": "Jerome Flynn"
+  },
+  {
+    "nmId": "nm2812026",
+    "name": "Missandei",
+    "chId": "tt0944947",
+    "playedBy": "Nathalie Emmanuel"
+  },
+  {
+    "nmId": "nm4535552",
+    "name": "Podrick Payne",
+    "chId": "tt0944947",
+    "playedBy": "Daniel Portman"
+  },
+  {
+    "nmId": "nm0396924",
+    "name": "Melisandre",
+    "chId": "tt0944947",
+    "playedBy": "Carice van Houten"
+  },
+  {
+    "nmId": "nm2760664",
+    "name": "Grey Worm",
+    "chId": "tt0944947",
+    "playedBy": "Jacob Anderson"
+  },
+  {
+    "nmId": "nm0001097",
+    "name": "Tywin Lannister",
+    "chId": "tt0944947",
+    "playedBy": "Charles Dance"
+  },
+  {
+    "nmId": "nm1754059",
+    "name": "Margaery Tyrell",
+    "chId": "tt0944947",
+    "playedBy": "Natalie Dormer"
+  },
+  {
+    "nmId": "nm0322416",
+    "name": "Joffrey Baratheon",
+    "chId": "tt0944947",
+    "playedBy": "Jack Gleeson"
+  },
+  {
+    "nmId": "nm0265610",
+    "name": "Catelyn Stark",
+    "chId": "tt0944947",
+    "playedBy": "Michelle Fairley"
+  },
+  {
+    "nmId": "nm0568400",
+    "name": "Barristan Selmy",
+    "chId": "tt0944947",
+    "playedBy": "Ian McElhinney"
+  },
+  {
+    "nmId": "nm0226820",
+    "name": "Stannis Baratheon",
+    "chId": "tt0944947",
+    "playedBy": "Stephen Dillane"
+  },
+  {
+    "nmId": "nm2356940",
+    "name": "Gilly",
+    "chId": "tt0944947",
+    "playedBy": "Hannah Murray"
+  },
+  {
+    "nmId": "nm4440305",
+    "name": "Grenn",
+    "chId": "tt0944947",
+    "playedBy": "Mark Stanley"
+  },
+  {
+    "nmId": "nm0534635",
+    "name": "Robb Stark",
+    "chId": "tt0944947",
+    "playedBy": "Richard Madden"
+  },
+  {
+    "nmId": "nm3645691",
+    "name": "Loras Tyrell",
+    "chId": "tt0944947",
+    "playedBy": "Finn Jones"
+  },
+  {
+    "nmId": "nm1402546",
+    "name": "Shae",
+    "chId": "tt0944947",
+    "playedBy": "Sibel Kekilli"
+  },
+  {
+    "nmId": "nm0568385",
+    "name": "Roose Bolton",
+    "chId": "tt0944947",
+    "playedBy": "Michael McElhatton"
+  },
+  {
+    "nmId": "nm0853583",
+    "name": "Alliser Thorne",
+    "chId": "tt0944947",
+    "playedBy": "Owen Teale"
+  },
+  {
+    "nmId": "nm1478079",
+    "name": "Gendry",
+    "chId": "tt0944947",
+    "playedBy": "Joe Dempsie"
+  },
+  {
+    "nmId": "nm0504320",
+    "name": "Qyburn",
+    "chId": "tt0944947",
+    "playedBy": "Anton Lesser"
+  },
+  {
+    "nmId": "nm0401264",
+    "name": "Daario Naharis",
+    "chId": "tt0944947",
+    "playedBy": "Michiel Huisman"
+  },
+  {
+    "nmId": "nm2835616",
+    "name": "Tommen Baratheon",
+    "chId": "tt0944947",
+    "playedBy": "Dean-Charles Chapman"
+  },
+  {
+    "nmId": "nm0064155",
+    "name": "Meryn Trant",
+    "chId": "tt0944947",
+    "playedBy": "Ian Beattie"
+  },
+  {
+    "nmId": "nm1164730",
+    "name": "Osha",
+    "chId": "tt0944947",
+    "playedBy": "Natalia Tena"
+  },
+  {
+    "nmId": "nm1697771",
+    "name": "Meera Reed",
+    "chId": "tt0944947",
+    "playedBy": "Ellie Kendrick"
+  },
+  {
+    "nmId": "nm1638294",
+    "name": "Lancel Lannister",
+    "chId": "tt0944947",
+    "playedBy": "Eugene Simon"
+  },
+  {
+    "nmId": "nm0141582",
+    "name": "Janos Slynt",
+    "chId": "tt0944947",
+    "playedBy": "Dominic Carter"
+  },
+  {
+    "nmId": "nm5485781",
+    "name": "Gregor Clegane",
+    "chId": "tt0944947",
+    "playedBy": "Hafþór Júlíus Björnsson"
+  },
+  {
+    "nmId": "nm3280686",
+    "name": "Rickon Stark",
+    "chId": "tt0944947",
+    "playedBy": "Art Parkinson"
+  },
+  {
+    "nmId": "nm1987270",
+    "name": "Othell Yarwyck",
+    "chId": "tt0944947",
+    "playedBy": "Brian Fortune"
+  },
+  {
+    "nmId": "nm0890055",
+    "name": "Ellaria Sand",
+    "chId": "tt0944947",
+    "playedBy": "Indira Varma"
+  },
+  {
+    "nmId": "nm0231871",
+    "name": "Rodrik Cassel",
+    "chId": "tt0944947",
+    "playedBy": "Ron Donachie"
+  },
+  {
+    "nmId": "nm0004355",
+    "name": "Mace Tyrell",
+    "chId": "tt0944947",
+    "playedBy": "Roger Ashton-Griffiths"
+  },
+  {
+    "nmId": "nm3822505",
+    "name": "Irri",
+    "chId": "tt0944947",
+    "playedBy": "Amrita Acharia"
+  },
+  {
+    "nmId": "nm0181920",
+    "name": "Jeor Mormont",
+    "chId": "tt0944947",
+    "playedBy": "James Cosmo"
+  },
+  {
+    "nmId": "nm0312245",
+    "name": "Kevan Lannister",
+    "chId": "tt0944947",
+    "playedBy": "Ian Gelder"
+  },
+  {
+    "nmId": "nm3444954",
+    "name": "Hot Pie",
+    "chId": "tt0944947",
+    "playedBy": "Ben Hawkey"
+  },
+  {
+    "nmId": "nm1861467",
+    "name": "Doreah",
+    "chId": "tt0944947",
+    "playedBy": "Roxanne McKee"
+  },
+  {
+    "nmId": "nm0443373",
+    "name": "Thoros of Myr",
+    "chId": "tt0944947",
+    "playedBy": "Paul Kaye"
+  },
+  {
+    "nmId": "nm1032473",
+    "name": "Jojen Reed",
+    "chId": "tt0944947",
+    "playedBy": "Thomas Brodie-Sangster"
+  },
+  {
+    "nmId": "nm5081192",
+    "name": "Shireen Baratheon",
+    "chId": "tt0944947",
+    "playedBy": "Kerry Ingram"
+  },
+  {
+    "nmId": "nm1638006",
+    "name": "Bowen Marsh",
+    "chId": "tt0944947",
+    "playedBy": "Michael Condron"
+  },
+  {
+    "nmId": "nm0233807",
+    "name": "Beric Dondarrion",
+    "chId": "tt0944947",
+    "playedBy": "Richard Dormer"
+  },
+  {
+    "nmId": "nm3065809",
+    "name": "Tyene Sand",
+    "chId": "tt0944947",
+    "playedBy": "Rosabell Laurenti Sellers"
+  },
+  {
+    "nmId": "nm0889338",
+    "name": "Yohn Royce",
+    "chId": "tt0944947",
+    "playedBy": "Rupert Vansittart"
+  },
+  {
+    "nmId": "nm2167445",
+    "name": "Renly Baratheon",
+    "chId": "tt0944947",
+    "playedBy": "Gethin Anthony"
+  },
+  {
+    "nmId": "nm0580014",
+    "name": "Edmure Tully",
+    "chId": "tt0944947",
+    "playedBy": "Tobias Menzies"
+  },
+  {
+    "nmId": "nm1095720",
+    "name": "Obara Sand",
+    "chId": "tt0944947",
+    "playedBy": "Keisha Castle-Hughes"
+  },
+  {
+    "nmId": "nm2181128",
+    "name": "Hizdahr zo Loraq",
+    "chId": "tt0944947",
+    "playedBy": "Joel Fry"
+  },
+  {
+    "nmId": "nm3725055",
+    "name": "Nymeria Sand",
+    "chId": "tt0944947",
+    "playedBy": "Jessica Henwick"
+  },
+  {
+    "nmId": "nm4422626",
+    "name": "Tommen Baratheon",
+    "chId": "tt0944947",
+    "playedBy": "Callum Wharry"
+  },
+  {
+    "nmId": "nm0535837",
+    "name": "Yoren",
+    "chId": "tt0944947",
+    "playedBy": "Francis Magee"
+  },
+  {
+    "nmId": "nm1175468",
+    "name": "Rakharo",
+    "chId": "tt0944947",
+    "playedBy": "Elyes Gabel"
+  },
+  {
+    "nmId": "nm4982706",
+    "name": "Marei",
+    "chId": "tt0944947",
+    "playedBy": "Josephine Gillan"
+  },
+  {
+    "nmId": "nm0103195",
+    "name": "Walder Frey",
+    "chId": "tt0944947",
+    "playedBy": "David Bradley"
+  },
+  {
+    "nmId": "nm1152798",
+    "name": "Benjen Stark",
+    "chId": "tt0944947",
+    "playedBy": "Joseph Mawle"
+  },
+  {
+    "nmId": "nm0188871",
+    "name": "Orell",
+    "chId": "tt0944947",
+    "playedBy": "Mackenzie Crook"
+  },
+  {
+    "nmId": "nm1502469",
+    "name": "Qotho",
+    "chId": "tt0944947",
+    "playedBy": "Dar Salim"
+  },
+  {
+    "nmId": "nm0915453",
+    "name": "Dontos Hollard",
+    "chId": "tt0944947",
+    "playedBy": "Tony Way"
+  },
+  {
+    "nmId": "nm1528121",
+    "name": "Anguy",
+    "chId": "tt0944947",
+    "playedBy": "Philip McGinley"
+  },
+  {
+    "nmId": "nm0516003",
+    "name": "Viserys Targaryen",
+    "chId": "tt0944947",
+    "playedBy": "Harry Lloyd"
+  },
+  {
+    "nmId": "nm0803397",
+    "name": "Jory Cassel",
+    "chId": "tt0944947",
+    "playedBy": "Jamie Sives"
+  },
+  {
+    "nmId": "nm0225483",
+    "name": "Lysa Arryn",
+    "chId": "tt0944947",
+    "playedBy": "Kate Dickie"
+  },
+  {
+    "nmId": "nm0001354",
+    "name": "Mance Rayder",
+    "chId": "tt0944947",
+    "playedBy": "Ciarán Hinds"
+  },
+  {
+    "nmId": "nm0700059",
+    "name": "Craster",
+    "chId": "tt0944947",
+    "playedBy": "Robert Pugh"
+  },
+  {
+    "nmId": "nm0796502",
+    "name": "Doran Martell",
+    "chId": "tt0944947",
+    "playedBy": "Alexander Siddig"
+  },
+  {
+    "nmId": "nm0269077",
+    "name": "Randyll Tarly",
+    "chId": "tt0944947",
+    "playedBy": "James Faulkner"
+  },
+  {
+    "nmId": "nm0570570",
+    "name": "Robett Glover",
+    "chId": "tt0944947",
+    "playedBy": "Tim McInnerny"
+  },
+  {
+    "nmId": "nm0821471",
+    "name": "Rickard Karstark",
+    "chId": "tt0944947",
+    "playedBy": "John Stahl"
+  },
+  {
+    "nmId": "nm8165602",
+    "name": "Lyanna Mormont",
+    "chId": "tt0944947",
+    "playedBy": "Bella Ramsey"
+  },
+  {
+    "nmId": "nm4514519",
+    "name": "Trystane Martell",
+    "chId": "tt0944947",
+    "playedBy": "Toby Sebastian"
+  },
+  {
+    "nmId": "nm0309693",
+    "name": "Tycho Nestoris",
+    "chId": "tt0944947",
+    "playedBy": "Mark Gatiss"
+  },
+  {
+    "nmId": "nm0538869",
+    "name": "Balon Greyjoy",
+    "chId": "tt0944947",
+    "playedBy": "Patrick Malahide"
+  },
+  {
+    "nmId": "nm0360171",
+    "name": "Pyat Pree",
+    "chId": "tt0944947",
+    "playedBy": "Ian Hanmore"
+  },
+  {
+    "nmId": "nm0464305",
+    "name": "Styr",
+    "chId": "tt0944947",
+    "playedBy": "Yuri Kolokolnikov"
+  },
+  {
+    "nmId": "nm3330122",
+    "name": "Ilyn Payne",
+    "chId": "tt0944947",
+    "playedBy": "Wilko Johnson"
+  },
+  {
+    "nmId": "nm4523680",
+    "name": "Matthos Seaworth",
+    "chId": "tt0944947",
+    "playedBy": "Kerr Logan"
+  },
+  {
+    "nmId": "nm0571654",
+    "name": "Amory Lorch",
+    "chId": "tt0944947",
+    "playedBy": "Fintan McKeown"
+  },
+  {
+    "nmId": "nm0429956",
+    "name": "Biter",
+    "chId": "tt0944947",
+    "playedBy": "Gerard Jordan"
+  },
+  {
+    "nmId": "nm4385245",
+    "name": "Timett",
+    "chId": "tt0944947",
+    "playedBy": "Tobias Winter"
+  },
+  {
+    "nmId": "nm1748634",
+    "name": "Salladhor Saan",
+    "chId": "tt0944947",
+    "playedBy": "Lucian Msamati"
+  },
+  {
+    "nmId": "nm4534098",
+    "name": "Daario Naharis",
+    "chId": "tt0944947",
+    "playedBy": "Ed Skrein"
+  },
+  {
+    "nmId": "nm0815420",
+    "name": "Mirri Maz Duur",
+    "chId": "tt0944947",
+    "playedBy": "Mia Soteriou"
+  },
+  {
+    "nmId": "nm3464945",
+    "name": "Polliver",
+    "chId": "tt0944947",
+    "playedBy": "Andy Kellegher"
+  },
+  {
+    "nmId": "nm0383835",
+    "name": "Kraznys mo Nakloz",
+    "chId": "tt0944947",
+    "playedBy": "Dan Hildebrand"
+  },
+  {
+    "nmId": "nm6729880",
+    "name": "Aggo",
+    "chId": "tt0944947",
+    "playedBy": "Chuku Modu"
+  },
+  {
+    "nmId": "nm0234541",
+    "name": "Hallyne",
+    "chId": "tt0944947",
+    "playedBy": "Roy Dotrice"
+  },
+  {
+    "nmId": "nm0019885",
+    "name": "Illyrio Mopatis",
+    "chId": "tt0944947",
+    "playedBy": "Roger Allam"
+  },
+  {
+    "nmId": "nm0269923",
+    "name": "Aeron Greyjoy",
+    "chId": "tt0944947",
+    "playedBy": "Michael Feast"
+  },
+  {
+    "nmId": "nm1947403",
+    "name": "Gregor Clegane",
+    "chId": "tt0944947",
+    "playedBy": "Conan Stevens"
+  },
+  {
+    "nmId": "nm1623508",
+    "name": "Lothar Frey",
+    "chId": "tt0944947",
+    "playedBy": "Tom Brooke"
+  },
+  {
+    "nmId": "nm1788152",
+    "name": "Vardis Egen",
+    "chId": "tt0944947",
+    "playedBy": "Brendan McCormack"
+  },
+  {
+    "nmId": "nm3671418",
+    "name": "Quaithe",
+    "chId": "tt0944947",
+    "playedBy": "Laura Pradelska"
+  },
+  {
+    "nmId": "nm1677757",
+    "name": "The Tickler",
+    "chId": "tt0944947",
+    "playedBy": "Anthony Morris"
+  },
+  {
+    "nmId": "nm1146807",
+    "name": "Ternesio Terys",
+    "chId": "tt0944947",
+    "playedBy": "Gary Oliver"
+  },
+  {
+    "nmId": "nm0928408",
+    "name": "Tobho Mott",
+    "chId": "tt0944947",
+    "playedBy": "Andrew Wilde"
+  },
+  {
+    "nmId": "nm0916037",
+    "name": "Will",
+    "chId": "tt0944947",
+    "playedBy": "Bronson Webb"
+  },
+  {
+    "nmId": "nm4430905",
+    "name": "Mycah",
+    "chId": "tt0944947",
+    "playedBy": "Rhodri Hosking"
+  },
+  {
+    "nmId": "nm0822062",
+    "name": "Jon Arryn",
+    "chId": "tt0944947",
+    "playedBy": "John Standing"
+  },
+  {
+    "nmId": "nm2075330",
+    "name": "Mero",
+    "chId": "tt0944947",
+    "playedBy": "Mark Killeen"
+  },
+  {
+    "nmId": "nm3209935",
+    "name": "Waymar Royce",
+    "chId": "tt0944947",
+    "playedBy": "Rob Ostlere"
+  },
+  {
+    "nmId": "nm0863130",
+    "name": "Prendahl na Ghezn",
+    "chId": "tt0944947",
+    "playedBy": "Ramon Tikaram"
+  },
+  {
+    "nmId": "nm0443825",
+    "name": "Gared",
+    "chId": "tt0944947",
+    "playedBy": "Dermot Keaney"
+  },
+  {
+    "nmId": "nm0562003",
+    "name": "Maggy",
+    "chId": "tt0944947",
+    "playedBy": "Jodhi May"
+  },
+  {
+    "nmId": "nm5093301",
+    "name": "Roslin Frey",
+    "chId": "tt0944947",
+    "playedBy": "Alexandra Dowling"
+  },
+  {
+    "nmId": "nm0227971",
+    "name": "Anya Waynwood",
+    "chId": "tt0944947",
+    "playedBy": "Paola Dionisotti"
+  },
+  {
+    "nmId": "nm2238815",
+    "name": "Dickon Tarly",
+    "chId": "tt0944947",
+    "playedBy": "Freddie Stroma"
+  },
+  {
+    "nmId": "nm5039410",
+    "name": "Talla Tarly",
+    "chId": "tt0944947",
+    "playedBy": "Rebecca Benson"
+  },
+  {
+    "nmId": "nm1651043",
+    "name": "Stiv",
+    "chId": "tt0944947",
+    "playedBy": "Stephen Don"
+  },
+  {
+    "nmId": "nm0287562",
+    "name": "Rickard Stark",
+    "chId": "tt0944947",
+    "playedBy": "Wayne Foskett"
+  },
+  {
+    "nmId": "nm1074361",
+    "name": "Arthur Dayne",
+    "chId": "tt0944947",
+    "playedBy": "Luke Roberts"
+  },
+  {
+    "nmId": "nm6793798",
+    "name": "Gerold Hightower",
+    "chId": "tt0944947",
+    "playedBy": "Eddie Eyre"
+  },
+  {
+    "nmId": "nm2162079",
+    "name": "Mago",
+    "chId": "tt0944947",
+    "playedBy": "Ivailo Dimitrov"
+  },
+  {
+    "nmId": "nm4547262",
+    "name": "Howland Reed",
+    "chId": "tt0944947",
+    "playedBy": "Leo Woodruff"
+  }
+]

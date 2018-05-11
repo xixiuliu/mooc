@@ -1,94 +1,63 @@
-<!--<template lang="pug">-->
-<!--.container-->
-<!--.house(ref="houses")-->
-<!--.items(v-for='(item,index) in houses' v-on:key="index" v-bind:click='showHouse(item)')-->
-<!--.desc-->
-<!--.words {{item.word}}-->
-<!--.cname {{item.cname}}-->
-<!--.name {{item.name}}-->
-<!--.characters-->
-<!--.title 主要人物-->
-<!--.section-->
-<!--.items(v-for='(item,index) in characters' v-on:key='index' v-bind:click='showCharacter(item)')-->
-<!--.desc-->
-<!--.cname {{item.cname}}-->
-<!--.name {{item.name}}-->
-<!--.playedBy {{item.playedBy}}-->
-<!--.city-->
-<!--.title 维斯特洛-->
-<!--.title-intro 维斯特洛是《冰与火之歌》世界的四个已知大陆中最西面的一个，面积与现实世界的南美洲大致相等，形状大致相当于将大不列颠岛横向镜面翻转，然后在东侧接上倒转的爱尔兰岛。整个大陆形状狭长，从南端多恩半岛一直伸展到北端永冬之地的距离至少 3000 英里（以绝境长城的长度对比计算），东西走向最宽处约900英里。维斯特洛东临颤抖海（Shivering Sea）和狭海（Narrow Sea），西临日落之海（Sunset Sea），南临夏日之海（Summer Sea）。因为极端严寒的气候、充满敌意的原住民和危险的奇异物种（比如异鬼），极北地区仍有大片土地未经勘测，北端海岸的所在仍属未知之谜。-->
-<!--.city-items(v-for="(item,index) in cities" v-on:key='index')-->
-<!--.title {{cities.title}}}-->
-<!--.body {{cities.body}}}-->
-<!--</template>-->
+<template lang="pug">
+.container
+  .house(ref='house')
+    .house-content(v-for='(item, index) in houses' :key='index' @click='focusHouse(item)')
+      .house-text
+        .words {{ item.words }}
+        .cname {{ item.name }}
+        .name {{ item.cname }}
+  .povCharacters
+    .title 主要人物
+    .povCharacter-wrapper
+      .povCharacter-content(v-for='(item, index) in characters' :key='index' @click='focusCharacters(item)')
+        img(:src="item.profile")
+        .povCharacter-text
+          .cname {{ item.cname }}
+          .name {{ item.name }}
+          .playedBy {{ item.playedBy }}
 
-<!--<script>-->
-<!--// import { mapState } from 'vuex'-->
-
-<!--export default {-->
-<!--head() {-->
-<!--return {-->
-<!--title: '冰火脸谱'-->
-<!--}-->
-<!--},-->
-<!--computed: {-->
-<!--// ...mapState([-->
-<!--//   'houses',-->
-<!--//   'characters',-->
-<!--//   'cities'-->
-<!--// ])-->
-<!--}-->
-<!--}-->
-<!--</script>-->
-<!--<style scoped>-->
-<!--.title-->
-<!--{-->
-<!--margin: 50px 0;-->
-<!--}-->
-<!--</style>-->
-<template>
-  <section class="container">
-    <img src="../static/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      This page is loaded from the {{ name }}
-    </h1>
-    <h2 class="info" v-if="name === 'client'">
-      Please refresh the page
-    </h2>
-    <nuxt-link class="button" to="/">
-      About page
-    </nuxt-link>
-  </section>
+  .city
+    .city-title 维斯特洛
+    .city-intro 坐落于已知世界的最西端，狭长的维斯特洛大陆由北部的极地冰盖起向南延绵约3,000英里。绝境长城是一座巍峨挺立的不可逾越之物，横跨300英里，将最北的塞外地区与七大王国相互分离。一个统一的政治实体领导着南方的广阔土地，并形成九块相互联系又相互割据的区域。
+    .city-item(v-for='(item, index) in cities' v-on=key='index')
+      .city-item-title {{ item.title }}
+      .city-item-body {{ item.body }}
 </template>
-<script>
-  export default {
-    asyncData({ req }) {
-      return {
-        name: req ? 'server' : 'client'
-      }
-    },
-    head() {
-      return {
-        title: `About Page (${this.name}-side)`
-      }
-    }
-  }
-</script>
 
-<style scoped>
-  .title
-  {
-    margin-top: 50px;
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  head() {
+    return {
+      title: '冰火脸谱'
+    }
+  },
+  computed: {
+    ...mapState([
+      'houses',
+      'characters',
+      'cities'
+    ])
+  },
+  methods: {
+    focusHouse(item) {
+      // 路由跳转到house，附带查询参数id
+      this.$router.push({ path: '/house', query: { id: item._id } })
+    },
+    focusCharacters(item) {
+      // 路由跳转到character，附带查询参数id
+      this.$router.push({ path: '/character', query: { id: item._id } })
+    }
+  },
+  beforeCreate() {
+    // 请求所有家族和主要人物
+    this.$store.dispatch('fetchHouses')
+    this.$store.dispatch('fetchCharacters')
   }
-  .info
-  {
-    font-weight: 300;
-    color: #9aabb1;
-    margin: 0;
-    margin-top: 10px;
-  }
-  .button
-  {
-    margin-top: 50px;
-  }
+}
+
+</script>
+<style scoped lang="sass" src="~static/sass/index.sass">
+
 </style>

@@ -10,20 +10,25 @@ export default async (ctx, next) => {
       ctx.body = tip
     } else if (message.Event === 'unsubscribe') {
       ctx.body = '取关'
+    } else if (message.Event === 'view') {
+      ctx.body = message.EventKey + message.MenuId
+    } else if (message.Event === 'pic_sysphoto') {
+      ctx.body = message.Count + ' photos sent'
     }
   } else if (message.MsgType === 'text') {
     if (message.Content === '1') {
-      let userList = [
-        {
-          openid: 'olS79wCAja-ZzpFvLOOegWPr00PI',
-          lang: 'zh_CN'
-        }
-      ]
       // const data = await client.handle('createTag', 'vue')
       // const data = await client.handle('fetchTags')
       const data = await client.handle('fetchTagUsers', 2)
       console.log(data)
+    } else if (message.Content === '2') {
+      const menu = require('./menu').default
+      const menuData = await client.handle('createMenu', menu)
+      console.log('1')
+      console.log(menuData)
+      console.log('2')
     }
+
     ctx.body = message.Content
   } else if (message.MsgType === 'image') {
     ctx.body = {

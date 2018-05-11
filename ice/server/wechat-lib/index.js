@@ -3,6 +3,7 @@ import formstream from 'formstream'
 import fs from 'fs'
 import * as _ from 'lodash'
 import path from 'path'
+import { sign } from './util'
 
 const base = 'https://api.weixin.qq.com/cgi-bin/'
 const api = {
@@ -39,6 +40,17 @@ const api = {
     getBlackList: base + 'tags/members/getblacklist?',
     batchBlackUsers: base + 'tags/members/batchblacklist?',
     batchUnblackUsers: base + 'tags/members/batchunblacklist?'
+  },
+  menu: {
+    create: base + 'menu/create?',
+    get: base + 'menu/get?',
+    del: base + 'menu/delete?',
+    addCondition: base + 'menu/addconditional?',
+    delCondition: base + 'menu/delconditional?',
+    getInfo: base + 'get_current_selfmenu_info?'
+  },
+  ticket: {
+    get: base + 'ticket/getticket?'
   }
 }
 
@@ -58,6 +70,8 @@ export default class Wechat {
     this.appSecret = opts.appSecret
     this.getAccessToken = opts.getAccessToken
     this.saveAccessToken = opts.saveAccessToken
+    this.getTicket = opts.getTicket
+    this.saveTicket = opts.saveTicket
 
     this.fetchAccessToken()
   }
@@ -82,10 +96,35 @@ export default class Wechat {
 
     return data
   }
+
   async updateAccessToken() {
     const url = api.accessToken + '&appid=' + this.appID + '&secret=' + this.appSecret
 
     const data = await this.request({url: url})
+    const now = (new Date().getTime())
+    const expiresIn = now + (data.expires_in - 20) * 1000
+
+    data.expires_in = expiresIn
+
+    return data
+  }
+
+  async fetchTicket(token) {
+    let data = await this.getTicket()
+
+    if (!this.isValidToken(data, 'ticket')) {
+      data = await this.updateTicket(token)
+    }
+
+    await this.saveTicket(data)
+
+    return data
+  }
+
+  async updateTicket(token) {
+    const url = api.ticket.get + '&access_token=' + token + '&type=jsapi'
+
+    let data = await this.request({url: url})
     const now = (new Date().getTime())
     const expiresIn = now + (data.expires_in - 20) * 1000
 
@@ -328,5 +367,49 @@ export default class Wechat {
     const url = `${api.user.fetchUserList}access_token=${token}&next_openid=${openId || ''}`
 
     return {url: url}
+  }
+  createMenu(token, menu) {
+    const url = api.menu.create + 'access_token=' + token
+
+    return {method: 'POST', url: url, body: menu}
+  }
+
+  getMenu(token) {
+    const url = api.menu.get + 'access_token=' + token
+
+    return {url: url}
+  }
+
+  delMenu(token) {
+    const url = api.menu.del + 'access_token=' + token
+
+    return {url: url}
+  }
+  addConditionMenu(token, menu, rule) {
+    const url = api.menu.addCondition + 'access_token=' + token
+    const form = {
+      button: menu,
+      matchrule: rule
+    }
+
+    return {method: 'POST', url: url, body: form}
+  }
+
+  delConditionMenu(token, menuId) {
+    const url = api.menu.delCondition + 'access_token=' + token
+    const form = {
+      menuid: menuId
+    }
+
+    return {method: 'POST', url: url, body: form}
+  }
+
+  getCurrentMenuInfo(token) {
+    const url = api.menu.getInfo + 'access_token=' + token
+
+    return {url: url}
+  }
+  sign(ticket, url) {
+    return sign(ticket, url)
   }
 }
