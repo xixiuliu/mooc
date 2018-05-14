@@ -22,9 +22,12 @@
         <item url="file://$PROJECT_DIR$/dist/server/database/schema/ticket.js" />
         <item url="file://$PROJECT_DIR$/dist/server/database/schema/wikiCharacter.js" />
         <item url="file://$PROJECT_DIR$/dist/server/database/schema/wikiHouses.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/decorator/router.js" />
         <item url="file://$PROJECT_DIR$/dist/server/libs/qiniu.js" />
         <item url="file://$PROJECT_DIR$/dist/server/middlewares/database.js" />
         <item url="file://$PROJECT_DIR$/dist/server/middlewares/router.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/routes/wechat.js" />
+        <item url="file://$PROJECT_DIR$/dist/server/routes/wiki.js" />
         <item url="file://$PROJECT_DIR$/dist/server/wechat-lib/index.js" />
         <item url="file://$PROJECT_DIR$/dist/server/wechat-lib/middleware.js" />
         <item url="file://$PROJECT_DIR$/dist/server/wechat-lib/oauth.js" />
@@ -63,9 +66,12 @@
       <root url="file://$PROJECT_DIR$/dist/server/database/schema/ticket.js" />
       <root url="file://$PROJECT_DIR$/dist/server/database/schema/wikiCharacter.js" />
       <root url="file://$PROJECT_DIR$/dist/server/database/schema/wikiHouses.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/decorator/router.js" />
       <root url="file://$PROJECT_DIR$/dist/server/libs/qiniu.js" />
       <root url="file://$PROJECT_DIR$/dist/server/middlewares/database.js" />
       <root url="file://$PROJECT_DIR$/dist/server/middlewares/router.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/routes/wechat.js" />
+      <root url="file://$PROJECT_DIR$/dist/server/routes/wiki.js" />
       <root url="file://$PROJECT_DIR$/dist/server/wechat-lib/index.js" />
       <root url="file://$PROJECT_DIR$/dist/server/wechat-lib/middleware.js" />
       <root url="file://$PROJECT_DIR$/dist/server/wechat-lib/oauth.js" />

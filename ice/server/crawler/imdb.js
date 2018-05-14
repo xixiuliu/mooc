@@ -145,6 +145,6 @@ export const getIMDBImages = async () => {
   }
 }
 
-getIMDBImages()
+// getIMDBImages()
 // getIMDBProfile()
 // getIMDBCharacters()

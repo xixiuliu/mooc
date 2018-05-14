@@ -243,4 +243,4 @@ export const getSwornMembers = async () => {
   // console.log(houses)
   writeFileSync('./completeHouses.json', JSON.stringify(houses, null, 2), 'utf8')
 }
-getSwornMembers()
+// getSwornMembers()

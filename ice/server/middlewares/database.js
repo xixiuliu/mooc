@@ -22,7 +22,6 @@ let wikiHouses = require(resolve(__dirname, '../../completeHouses.json'))
 
 
 wikiCharacters = formaData(wikiCharacters)
-console.log(wikiCharacters.length)
 export const database = app => {
   mongoose.set('debug', true)
   mongoose.connect(config.db)

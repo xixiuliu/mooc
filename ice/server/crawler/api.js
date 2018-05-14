@@ -28,4 +28,4 @@ export const getAPICharacters = async (page = 1) => {
     getAPICharacters(page)
   }
 }
-getAPICharacters()
+// getAPICharacters()
