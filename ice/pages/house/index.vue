@@ -13,9 +13,9 @@
       .focusHouse-item-title 主要角色
       .focusHouse-item-body(v-for='(item, index) in house.swornMembers' :key='index')
         .swornMembers
-          img(:src="item.profile")
+          img(:src="imageCDN + '%27' + item.character.profile + '%27'")
           .swornMembers-body
-            .name {{ item.cname }}
+            .name {{ item.character.cname }}
             .introduction {{ item.text }}
 
       .focusHouse-item-section(v-for='(item, index) in house.sections' :key='index')
@@ -33,6 +33,7 @@
     },
     computed: {
       ...mapState({
+        imageCDN: 'imageCDN',
         house: 'currentHouse'
       })
     },

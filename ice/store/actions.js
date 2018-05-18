@@ -1,4 +1,5 @@
 import Services from './services'
+import axios from 'axios'
 export default {
   getWechatSignature({ commit }, url) {
     return Services.getWechatSignature(url)
@@ -11,11 +12,11 @@ export default {
     state.houses = res.data.data
     return res
   },
-  async fetchCities({ state }) {
-    const res = await Services.fetchCities()
-    state.houses = res.data.data
-    return res
-  },
+  // async fetchCities({ state }) {
+  //   const res = await Services.fetchCities()
+  //   state.houses = res.data.data
+  //   return res
+  // },
   async fetchCharacters({ state }) {
     const res = await Services.fetchCharacters()
     state.characters = res.data.data
@@ -45,6 +46,22 @@ export default {
     const res = await Services.fetchProduct(_id)
     state.currentProduct = res.data.data
     return res
+  },
+
+  async saveProduct({ state, dispatch }, product) {
+    await axios.post('/api/products', product)
+    let res = await dispatch('fetchProducts')
+    return res.data.data
+  },
+  async putProduct({ state, dispatch }, product) {
+    await axios.put('/api/products', product)
+    let res = await dispatch('fetchProducts')
+    return res.data.data
+  },
+  async deleteProduct({ state, dispatch }, product) {
+    await axios.delete(`/api/products/${product._id}`)
+    let res = await dispatch('fetchProducts')
+    return res.data.data
   },
   async fetchUserAndOrders({ state }) {
     const res = await Services.fetchUserAndOrders()

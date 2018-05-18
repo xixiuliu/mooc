@@ -1,0 +1,32 @@
+.snackbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center; }
+  .snackbar .snackbar-content {
+    flex-grow: 0;
+    min-height: 48px;
+    min-width: calc(320px - 24px);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 24px;
+    font-size: 16px;
+    background-color: #212121;
+    color: #fff; }
+    .snackbar .snackbar-content .action {
+      margin-left: 24px;
+      color: #FFC107; }
+
+.swing-enter-active, .swing-leave-active {
+  transition: all 200ms; }
+
+.swing-enter, .swing-leave-active {
+  opacity: 0.3;
+  transform: translateY(100%); }
+
+/*# sourceMappingURL=snackbar.css.map */

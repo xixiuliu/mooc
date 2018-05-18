@@ -15,14 +15,8 @@ class Servives {
     return axios.get(`${baseUrl}/wiki/houses`)
   }
 
-  fetchCities() {
-    // return axios.get(`${baseUrl}/wiki/cities`)
-    return {data: {data: []}, success: true}
-  }
-
   fetchCharacters() {
-    // return axios.get(`${baseUrl}/wiki/characters`)
-    return {data: {data: []}, success: true}
+    return axios.get(`${baseUrl}/wiki/characters`)
   }
 
   fetchHouse(id) {
@@ -34,11 +28,11 @@ class Servives {
   }
 
   fetchProducts() {
-    return axios.get(`${baseUrl}/wiki/products`)
+    return axios.get(`${baseUrl}/api/products`)
   }
 
   fetchProduct(id) {
-    return axios.get(`${baseUrl}/wiki/products/${id}`)
+    return axios.get(`${baseUrl}/api/products/${id}`)
   }
 
   fetchUserAndOrders(id) {

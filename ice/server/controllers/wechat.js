@@ -1,4 +1,4 @@
-import * as api from '../api'
+import api from '../api'
 import { parse as urlParse } from 'url'
 import { parse as queryParse } from 'querystring'
 import config from '../config'
@@ -7,7 +7,7 @@ export async function signature(ctx, next) {
 
   if (!url) ctx.throw(404)
   url = decodeURIComponent(url)
-  let params = await api.getSignatureAsync(url)
+  let params = await api.wechat.getSignatureAsync(url)
 
   ctx.body = {
     success: 1,
@@ -21,7 +21,7 @@ export async function redirect(ctx, next) {
   const {a, b} = ctx.query
   const params = `${a}_${b}`
 
-  const url = api.getAuthorizeURL(scope, target, params)
+  const url = api.wechat.getAuthorizeURL(scope, target, params)
   ctx.redirect(url)
 }
 export async function oauth(ctx, next) {
@@ -30,7 +30,7 @@ export async function oauth(ctx, next) {
   const urlObj = urlParse(url)
   const params = queryParse(urlObj.query)
   const code = params.code
-  const user = await api.getUserByCode(code)
+  const user = await api.wechat.getUserByCode(code)
 
   console.log(user)
 
