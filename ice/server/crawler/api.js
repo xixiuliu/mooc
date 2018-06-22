@@ -18,7 +18,6 @@ export const getAPICharacters = async (page = 1) => {
   console.log('现有' + characters.length + '条数据')
   if (body.length < 50) {
     console.log('爬完了')
-
     return
 
   } else {

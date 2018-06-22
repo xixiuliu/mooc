@@ -7,7 +7,7 @@ const ProductSchema = new Schema({
   title: String,
   intro: String,
   images: [
-    {image: String}
+    String
   ],
   parameters: [
     {

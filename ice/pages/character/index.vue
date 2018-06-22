@@ -21,7 +21,7 @@
 
       .focusCharacter-item(v-for='item in character.sections')
         .focusCharacter-item-title {{ item.title }}
-        .focusCharacter-item-body {{ item.content }}
+        .focusCharacter-item-body(v-for='des in item.content') {{ des }}
 </template>
 
 <script>

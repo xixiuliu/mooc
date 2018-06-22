@@ -36,11 +36,7 @@ export class productController {
       price: xss(product.price),
       title: xss(product.title),
       intro: xss(product.intro),
-      images: R.map(
-        item => ({
-          image: xss(item.image)
-        })
-      )(product.images),
+      images: R.map(xss)(product.images),
       parameters: R.map(
         item => ({
           key: xss(item.key),
@@ -83,22 +79,20 @@ export class productController {
     product.title = xss(body.title)
     product.price = xss(body.price)
     product.intro = xss(body.intro)
-    product.images = R.map(
-      item => ({
-        image: xss(item.image)
-      })
-    )(product.images)
+    product.images = R.map(xss)(body.images)
     product.parameters = R.map(
       item => ({
         key: xss(item.key),
         value: xss(item.value)
       })
-    )(product.parameters)
+    )(body.parameters)
 
     try {
       product = await api.product.update(product)
-      ctx.body = product
-
+      ctx.body = {
+        success: true,
+        data: product
+      }
     } catch (e) {
       ctx.throw(501, e)
     }

@@ -20,7 +20,7 @@
 
       .focusHouse-item-section(v-for='(item, index) in house.sections' :key='index')
         .focusHouse-item-title {{ item.title }}
-        .focusHouse-item-body {{ item.content }}
+        .focusHouse-item-body(v-for='des in item.content') {{ des }}
 </template>
 
 <script>

@@ -18,10 +18,13 @@ class Server {
     this.useMiddleWares(this.app)(MIDDLEWARES)
   }
 
+  // 加载不同的中间件
   useMiddleWares(app) {
     return R.map(R.compose(
       R.map(i => i(app)),
+      // 然后require
       require,
+      // 生成绝对路径的函数
       i => `${r('./middlewares')}/${i}`
     ))
   }
@@ -42,7 +45,6 @@ class Server {
     this.app.use(async (ctx, next) => {
       ctx.status = 200
       ctx.req.session = ctx.session
-
       await nuxt.render(ctx.req, ctx.res)
     })
     this.app.listen(port, host)

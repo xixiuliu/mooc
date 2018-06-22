@@ -3,11 +3,11 @@
     .shopping
       .shopping-title 权游周边
       .shopping-list
-        .shopping-item(v-for='(item, index) in products' :key='index' @click='showProduct(item)')
-          img(:src="item.images")
+        .shopping-item(v-for='item in products' @click='showProduct(item)')
+          img(:src="imageCDN  + item.images[0] + \'?imageView2/1/format/jpg/q/75|imageslim\'")
           .shopping-item-body
-            .title {{ item.title }}
-            .content {{ item.intro }}
+            .title {{item.price}}
+            .content {{item.intro}}
             //- .footer
             //-   .material-icon mood
 </template>
@@ -27,6 +27,7 @@
     },
     computed: {
       ...mapState([
+        'imageCDN',
         'products'
       ])
     },

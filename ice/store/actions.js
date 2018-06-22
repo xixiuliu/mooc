@@ -1,11 +1,43 @@
 import Services from './services'
 import axios from 'axios'
 export default {
+  nuxtServerInit({ commit }, { req }) {
+    if (req.session && req.session.user) {
+      const { email, nickname, avatarUrl } = req.session.user
+      const user = {
+        email,
+        nickname,
+        avatarUrl
+      }
+
+      commit('SET_USER', user)
+    }
+  },
   getWechatSignature({ commit }, url) {
     return Services.getWechatSignature(url)
   },
   getUserByOAuth({ commit }, url) {
     return Services.getUserByOAuth(url)
+  },
+  async login({ commit }, { email, password }) {
+    try {
+      let res = await axios.post('/admin/login', {
+        email,
+        password
+      })
+      let { data } = res
+      if (!data.success) commit('SET_USER', data.data)
+
+      return data
+    } catch (e) {
+      if (e.response.status === 401) {
+        throw new Error('You can\'t do it')
+      }
+    }
+  },
+  async logout({ commit }) {
+    await axios.post('/admin/logout')
+    commit('SET_USER', null)
   },
   async fetchHouses({ state }) {
     const res = await Services.fetchHouses()
@@ -51,11 +83,13 @@ export default {
   async saveProduct({ state, dispatch }, product) {
     await axios.post('/api/products', product)
     let res = await dispatch('fetchProducts')
+    console.log(res.data.data)
     return res.data.data
   },
   async putProduct({ state, dispatch }, product) {
     await axios.put('/api/products', product)
     let res = await dispatch('fetchProducts')
+    console.log(res.data.data)
     return res.data.data
   },
   async deleteProduct({ state, dispatch }, product) {

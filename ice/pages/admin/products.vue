@@ -14,7 +14,7 @@
           tr(v-for='item in products')
             td
               .img(v-for='image in item.images')
-                img(:src='imageCDN + image.image + "?imageView2/1/format/jpg/q/75|imageslim"')
+                img(:src='imageCDN + image + "?imageView2/1/format/jpg/q/75|imageslim"')
             td {{item.title}}
             td {{item.price}}
             td(v-html='item.intro')
@@ -25,6 +25,7 @@
                 .material-icon(style='font-size: 20px') edit
               button.btn(@click='deleteProduct(item)')
                 .material-icon(style='font-size: 20px') delete
+
     .edit-product(:class='{active: editing}')
       .edit-header
         .material-icon edit
@@ -44,8 +45,8 @@
           .input-group
             label 图片
             .upload-images
-              .img(v-for='item, index in edited.images')
-                img(:src='imageCDN + item.image + "?imageView2/1/format/jpg/q/75|imageslim"')
+              .img(v-for='item in edited.images')
+                img(:src='imageCDN + item + "?imageView2/1/format/jpg/q/75|imageslim"')
                 .tools
                   .material-icon(@click='deleteImg(index)') delete
               .upload-btn
@@ -67,7 +68,7 @@
                 .remove(@click='removeParameter(index)')
                   .material-icon remove
       .edit-footer
-        button.btn.save(@click='saveEdited', v-if='!isProduct') 创建周边
+        button.btn.save(@click='saveEdited', v-if='!isProduct') 创建
         button.btn.save(@click='saveEdited', v-if='isProduct') 保存修改
 
         .btn.add-parameter(@click='addParameter')
@@ -141,6 +142,7 @@ export default {
       this.editing = true
     },
     async saveEdited() {
+      console.log(this.isProduct)
       this.isProduct
         ? await this.$store.dispatch('putProduct', this.edited)
         : await this.$store.dispatch('saveProduct', this.edited)
@@ -167,37 +169,36 @@ export default {
       this.edited.images.splice(index, 1)
     },
     async getUptoken(key) {
-      let res = await axios.get('/api/qiniu/token', {
+      let res = await axios.get('/qiniu/token', {
         params: {
           key: key
         }
       })
       console.log(res)
-      return res.data.token
+      return res.data.data.token
     },
     async uploadImg(e) {
-      this.upload.dashoffset = this.upload.dasharray
-      var file = e.target.files[0]
-      var key = randomToken(32)
+      // this.upload.dashoffset = this.upload.dasharray
+      let file = e.target.files[0]
+      let key = randomToken(32)
 
-      key = `relatedproducts/${key}`
+      key = `products/${key}`
       let token = await this.getUptoken(key)
-
+      console.log(key)
       let uptoken = {
         uptoken: token,
         key: Buffer.from(key).toString('base64')
       }
-      Uploader.QINIU_UPLOAD_URL = '//up-z2.qbox.me/'
+      // Uploader.QINIU_UPLOAD_URL = '//up-z0.qiuniu.com/'
       let uploader = new Uploader(file, uptoken)
 
       uploader.on('progress', () => {
-        let dashoffset = this.upload.dasharray * (1 - uploader.percent)
-        this.upload.dashoffset = dashoffset
+        // let dashoffset = this.upload.dasharray * (1 - uploader.percent)
+        // this.upload.dashoffset = dashoffset
       })
 
       let res = await uploader.upload()
-      uploader.cancel()
-      console.log(res)
+      uploader.cancel(uploader.percent)
       this.edited.images.push(res.key)
       // this.upload.dashoffset = 0
     }
